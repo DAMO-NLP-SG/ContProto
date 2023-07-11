@@ -1,11 +1,11 @@
 export PYTHONPATH="$PWD"
 
 LANG=${1:-de}
-dataname=${2:-wikiann}
+dataname=${2:-conll03}
 SOFT_ID=0
 SOFT_EP=9
 WARMUP=1
-SEED=${3:-0 1 2}
+SEED=${3:0}
 
 
 DATA_DIR="data/${dataname}_${LANG}"

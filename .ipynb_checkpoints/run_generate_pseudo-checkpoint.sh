@@ -1,9 +1,7 @@
 export PYTHONPATH="$PWD"
 
 LANG=${1:-de}
-dataname=${2:-wikiann}
-MAX_SPANLEN=${3:-4}
-
+dataname=${2:-conll03}
 
 DATA_DIR="data/${dataname}_${LANG}"
 PRETRAINED="xlm-roberta-large"
@@ -19,8 +17,8 @@ MODEL_DROPOUT=0.2
 LR=1e-5
 MAXLEN=128
 MAXNORM=1.0
-batchSize=32 #default 10
-max_spanLen=${MAX_SPANLEN}
+batchSize=32
+max_spanLen=4
 tokenLen_emb_dim=50
 spanLen_emb_dim=100
 morph_emb_dim=100
